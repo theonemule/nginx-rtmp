@@ -6,7 +6,7 @@ echo "<!doctype html>
 <head>
 <meta charset=\"utf-8\">
 <meta name=\"author\" content=\"Blaize Stewart\">
-<title>RTMP Rebroacast Server</title>
+<title>RTMP Restream Server</title>
 </head>
 <style>
 textarea {
@@ -16,7 +16,7 @@ textarea {
 }
 </style>
 <body>
-<h1>RTMP Rebroacaster</h1>"
+<h1>RTMP Restream Server</h1>"
 
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 

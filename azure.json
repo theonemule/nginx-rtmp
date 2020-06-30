@@ -32,7 +32,7 @@
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
     "OSDiskName": "rtmp-vhd",
-    "imageSKU": "18.04.0-LTS",
+    "imageSKU": "18.04-LTS",
     "nicName": "rtmpNic",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "rtmpSubnet",
@@ -181,8 +181,8 @@
 			"typeHandlerVersion": "2.0",
 			"autoUpgradeMinorVersion": true,
 			"settings": {
-				"fileUris": "[split('https://raw.githubusercontent.com/theonemule/simple-rtmp-server/master/install.sh', ' ')]",
-				"commandToExecute": "[concat('bash install.sh --host=', parameters('dnsNameForPublicIP'), '.', resourceGroup().location, '.cloudapp.azure.com --adminpassword=', parameters('adminPassword'))]"
+				"fileUris": "[split('https://raw.githubusercontent.com/theonemule/nginx-rtmp/master/install.sh', ' ')]",
+				"commandToExecute": "[concat('bash install.sh --password=', parameters('adminPassword'), ' --streams=\"', parameters('streams'), '\"  --secret=',  parameters('rtmpKey'))]"
 			}
 		}
 	},	

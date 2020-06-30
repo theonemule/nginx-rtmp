@@ -28,6 +28,8 @@ The -e parameters define the deployment. If you have Docker for Desktop installe
 
 If you want to easily deploy this to Azure, you can deploy the Azure Resource Manager (ARM) template by clicking the button below.
 
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftheonemule%2Fnginx-rtmp%2Fmaster%2Fazure.json" target="_blank"><img src="http://azuredeploy.net/deploybutton.png"/></a>
+
 Once you're in the Azure Portal, you can fill out the form to deploy this to Azure.
 
 ![ARM Deployment](images/azure.png)

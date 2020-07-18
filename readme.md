@@ -13,7 +13,7 @@ This project grew out of a twofold need. One was to automate the build and condq
 To run this as a Docker container, simply use a Docker run command.
 
 ```
-docker run -it -p 1935:1935 -p 443:443 -e STREAMS=rtmp://stream1/key;rtmp://stream2/key;  -e RTMPSECRET=yoursecretkey PASSWORD=password123 blaize/nginx-rtmp
+docker run -it -p 1935:1935 -p 443:443 -e STREAMS=rtmp://stream1/key;rtmp://stream2/key  -e RTMPSECRET=yoursecretkey -e PASSWORD=password123 blaize/nginx-rtmp
 ```
 
 The -e parameters define the deployment. If you have Docker for Desktop installed, you can run this locally.
